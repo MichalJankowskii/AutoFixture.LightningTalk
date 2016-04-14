@@ -30,7 +30,6 @@
                 .ForEach(b => fixture.Behaviors.Remove(b));
 
             fixture.Behaviors.Add(new OmitOnRecursionBehavior());
-            fixture.Register<IFixture>(() => fixture);
         }
     }
 }
